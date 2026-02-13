@@ -7,7 +7,9 @@
     <title>Heart of Stars</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css" />
 </head>
 
@@ -16,15 +18,48 @@
     <canvas id="scene"></canvas>
 
     <main class="content">
-        <div class="texts">
-            <h1 class="title">"Je t'aime dans chaque<br />univers."</h1>
+        <div class="container">
+            <h1 class="title">Pour Emilia</h1>
+
+            <div class="poem">
+                <p class="verse">Il existe des étoiles<br>qui brillent sans bruit,<br>sans réclamer le ciel,<br>sans
+                    exiger qu’on les regarde.</p>
+                <p class="verse">Et pourtant,<br>on lève les yeux<br>et on les choisit.</p>
+                <p class="verse highlight">Emilia,<br>tu es cette lumière-là.</p>
+                <p class="verse">Tu n’es pas un feu d’artifice,<br>tu es une constellation.<br>Pas un éclat
+                    passager,<br>mais un point fixe<br>dans le désordre du monde.</p>
+                <p class="verse">Quand tu parles,<br>le temps ralentit,<br>comme s’il voulait écouter aussi.</p>
+                <p class="verse">Quand tu souris,<br>quelque chose en moi<br>décide que la vie est une bonne idée.</p>
+                <p class="verse">Je ne t’aime pas comme on veut posséder,<br>je t’aime comme on contemple l’océan
+                    —<br>avec respect,<br>avec distance,<br>avec admiration.</p>
+                <p class="verse">Je t’aime comme on aime une musique<br>qui ne nous appartient pas,<br>mais qui nous
+                    sauve quand même.</p>
+                <p class="verse">Je sais que nous marchons<br>sur un chemin nommé “amitié”,<br>et je l’honore.<br>Je le
+                    respecte.<br>Je le protège.</p>
+                <p class="verse">Mais si un jour<br>le vent change de direction,<br>si le destin se montre joueur,<br>si
+                    ton cœur cherche un endroit calme…</p>
+                <p class="verse">Sache que le mien<br>a déjà gardé une place pour toi.</p>
+                <p class="verse">Sans urgence.<br>Sans pression.<br>Sans condition.</p>
+                <p class="verse final">Juste une lumière<br>qui reste allumée.<br><br>Pour toi.</p>
+            </div>
+
+            <button id="gratitude-btn" class="glow-button">Merci d'être toi.</button>
+            <p id="hidden-message" class="hidden">Joyeuse Saint-Valentin, Emilia. 🌹</p>
+
+            <button id="music-toggle" class="icon-button" aria-label="Musique">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18V5l12-2v13"></path>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <circle cx="18" cy="16" r="3"></circle>
+                </svg>
+            </button>
         </div>
     </main>
 
-    <!-- Música de fondo -->
-    <audio id="bg-music" loop autoplay preload="auto">
+    <!-- Musique de fond -->
+    <audio id="bg-music" loop preload="auto">
         <source src="./Tom Odell - Another Love (Instrumental Sped Up).mp3" type="audio/mpeg" />
-        Votre navigateur ne supporte pas l'audio HTML5.
     </audio>
 
     <script src="./style/script.js"></script>
